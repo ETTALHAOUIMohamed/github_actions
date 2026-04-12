@@ -12,5 +12,7 @@ jobs:
           node-version: 18
       - name: install dependencies
         run: npm install
+        working-directory: react-app
       - name: run Tests
         run: npm run test
+        working-directory: react-app
