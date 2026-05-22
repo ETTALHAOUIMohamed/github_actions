@@ -22,13 +22,12 @@ jobs:
           node-version: 18
       - name: install dependencies
         run: npm install
+        working-directory: react-app
       - name: Build
         run: npm run build
         working-directory: react-app
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: react-app/build
           branch: gh-pages
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN}}
