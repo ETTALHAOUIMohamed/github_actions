@@ -31,4 +31,4 @@ jobs:
           folder: build # The folder the action should deploy.
           branch: gh-pages
         env:
-        ACCESS_TOKEN:${{ secrets.ACCESS_TOKEN}}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN}}
